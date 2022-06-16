@@ -1,0 +1,63 @@
+[main]
+host = https://www.transifex.com
+
+[o:kb_org:p:kb_clitest:r:en_1_json]
+file_filter = <lang>_1.json
+source_file = en_1.json
+type = KEYVALUEJSON
+minimum_perc = 0
+
+[o:kb_org:p:kb_clitest:r:en_2_json]
+file_filter = <lang>_2.json
+source_file = en_2.json
+type = KEYVALUEJSON
+minimum_perc = 0
+
+[o:kb_org:p:kb_clitest:r:en_3_json]
+file_filter = <lang>_3.json
+source_file = en_3.json
+type = KEYVALUEJSON
+minimum_perc = 0
+
+[o:kb_org:p:kb_clitest:r:en_4_json]
+file_filter = <lang>_4.json
+source_file = en_4.json
+type = KEYVALUEJSON
+minimum_perc = 0
+
+[o:kb_org:p:kb_clitest:r:en_5_json]
+file_filter = <lang>_5.json
+source_file = en_5.json
+type = KEYVALUEJSON
+minimum_perc = 0
+
+[o:kb_org:p:kb_clitest:r:en_6_json]
+file_filter = <lang>_6.json
+source_file = en_6.json
+type = KEYVALUEJSON
+minimum_perc = 0
+
+[o:kb_org:p:kb_clitest:r:en_7_json]
+file_filter = <lang>_7.json
+source_file = en_7.json
+type = KEYVALUEJSON
+minimum_perc = 0
+
+[o:kb_org:p:kb_clitest:r:en_8_json]
+file_filter = <lang>_8.json
+source_file = en_8.json
+type = KEYVALUEJSON
+minimum_perc = 0
+
+[o:kb_org:p:kb_clitest:r:en_9_json]
+file_filter = <lang>_9.json
+source_file = en_9.json
+type = KEYVALUEJSON
+minimum_perc = 0
+
+[o:kb_org:p:kb_clitest:r:en_10_json]
+file_filter = <lang>_10.json
+source_file = en_10.json
+type = KEYVALUEJSON
+minimum_perc = 0
+

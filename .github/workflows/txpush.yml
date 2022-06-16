@@ -1,0 +1,29 @@
+---
+
+name: Push to / pull from Transifex
+on: [push]
+jobs:
+  push_pull:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-go@v2
+      - name: Create .transifexrc
+        run: |
+          cat > ~/.transifexrc << EOF
+          [https://www.transifex.com]
+          api_hostname = https://api.transifex.com
+          hostname = https://www.transifex.com
+          password = __token__
+          rest_hostname = https://rest.api.transifex.com
+          token = __token__
+          username = api
+          EOF
+      - name: Insert token in file
+        env:
+          TOKEN: ${{ secrets.token }}
+        run: sed -i "s/__token__/${TOKEN//\//\\\/}/" ~/.transifexrc
+      - name: Push
+        run: bin/tx push -staf
+      - name: Pull
+        run: bin/tx pull -staf
